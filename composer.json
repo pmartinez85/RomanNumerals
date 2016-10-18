@@ -1,5 +1,8 @@
 {
     "name": "pmartinez1085/roman-numers",
+    "require": {
+        "phpspec/phpspec": "^3.1"
+    },
     "license": "MIT",
     "authors": [
         {
@@ -7,7 +10,10 @@
             "email": "pmartinez1085@gmail.com"
         }
     ],
-    "require": {
-        "phpspec/phpspec": "^3.1"
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
     }
 }
+
