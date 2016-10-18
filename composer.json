@@ -1,0 +1,13 @@
+{
+    "name": "pmartinez1085/roman-numers",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pedro Martinez",
+            "email": "pmartinez1085@gmail.com"
+        }
+    ],
+    "require": {
+        "phpspec/phpspec": "^3.1"
+    }
+}
