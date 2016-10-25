@@ -1,20 +1,23 @@
 <?php
 
 class RomanNumbers{
+    protected $code = [
+        1 => "I",
+        4 => "IV",
+        5 => "V",
+        9 => "IX",
+        10 => "X"
+        ];
 
     public function convert($number){
-        if ($number==10){
-            return "X";
+        $solution = "I";
+
+        if ($number>=4) {
+            $solution = "IV";
+            $number=0;
         }
-        if ($number==5){
-            return "V";
-        }
-        if ($number==3){
-            return "III";
-        }
-        if ($number==2){
-            return "II";
-        }
-        return "I";
+
+        $solution =$solution . str_repeat('I', $number);
+        return $solution;
     }
 }
